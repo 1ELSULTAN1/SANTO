@@ -3,37 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SANTO - اتصل بنا</title>
+  <title data-ar="SANTO - اتصل بنا" data-en="SANTO - Contact Us">SANTO - اتصل بنا</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="website icon" href="logo.png">
 </head>
 <body>
   <header>
-    <div class="logo"><a href="index.html"><img src="logo.png" alt="SANTO Logo"></a></div>
-    <nav><ul>
-      <li><a href="index.html">الرئيسية</a></li>
-      <li><a href="#">رجالي</a></li>
-      <li><a href="#">حريمي</a></li>
-      <li><a href="contact.html" class="active">اتصل بنا</a></li>
-    </ul></nav>
-    <button id="theme-toggle" class="theme-icon" aria-label="تبديل الوضع">
-      <img src="light-icon.png" alt="Toggle Theme" id="theme-icon" />
+    <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="SANTO Logo"></a>
+    </div>
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+            <li><a href="#" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+            <li><a href="#" data-ar="عنا" data-en="About">عنا</a></li>
+            <li><a href="contact.html" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a></li>
+        </ul>
+    </nav>
+    <div class="header-buttons">
+        <div class="search-bar desktop-search">
+            <input type="search" id="desktop-search-input" data-ar-placeholder="ابحث عن منتج..." data-en-placeholder="Search for a product...">
+            <i class="fa fa-search search-icon"></i>
+        </div>
+        <button id="lang-btn" aria-label="تبديل اللغة">
+            <div class="flag">
+                <img src="us.png" alt="US Flag">
+            </div>
+            <div class="text">US</div>
+        </button>
+        <button id="theme-toggle" class="theme-icon" aria-label="تبديل الوضع">
+            <img src="light-icon.png" alt="Toggle Theme" id="theme-icon" />
+        </button>
+        <button id="mobile-menu-btn" aria-label="فتح القائمة">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+  <div class="mobile-menu">
+    <button class="close-btn" aria-label="إغلاق القائمة">
+      <i class="fa fa-times"></i>
     </button>
-  </header>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+        <li><a href="#" data-ar="ساعات" data-en="Watches">ساعات</a></li>
+        <li><a href="#" data-ar="محافظ" data-en="Wallets">محافظ</a></li>
+        <li><a href="contact.html" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <section class="contact-info">
     <div class="container">
-      <h1 class="section-title">اتصل بنا</h1>
+      <h1 class="section-title" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</h1>
       <div class="info-box">
-        <p><strong>📞 الهاتف:</strong> 01026602800</p>
-        <p><strong>✉️ البريد:</strong> santo.watch.eg@gmail.com</p>
-        <p><strong>📷 انستجرام:</strong> <a href="https://instagram.com/saanto.eg" target="_blank">@saanto.eg</a></p>
+        <p><strong data-ar="📞 الهاتف:" data-en="📞 Phone:">📞 الهاتف:</strong> 01026602800</p>
+        <p><strong data-ar="✉️ البريد:" data-en="✉️ Email:">✉️ البريد:</strong> santo.watch.eg@gmail.com</p>
+        <p><strong data-ar="📷 انستجرام:" data-en="📷 Instagram:">📷 انستجرام:</strong> <a href="https://instagram.com/saanto.eg" target="_blank">@saanto.eg</a></p>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
+      <img src="logo.png" alt="SANTO Logo" class="footer-logo">
+      <p class="footer-about">SANTO Watch Store يقدم أحدث الساعات العالمية بلمسة من الأناقة والفخامة.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#">رجالي</a></li>
+        <li><a href="#">حريمي</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:santo.watch.eg@gmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="tel:01026602800"><i class="fa fa-phone"></i></a>
+      </div>
       <p class="footer-copy">SANTO Watch Store</p>
     </div>
   </footer>

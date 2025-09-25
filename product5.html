@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ar="SANTO - ساعة Watch1" data-en="SANTO - Watch1">SANTO - ساعة Watch1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="website icon" href="logo.png">
+</head>
+<body>
+
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="SANTO Logo"></a>
+      </div>
+  
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+          <li><a href="#" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+          <li><a href="#" data-ar="عنا" data-en="About">عنا</a></li>
+          <li><a href="contact.html" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-buttons">
+        <div class="search-bar desktop-search">
+          <input type="search" id="desktop-search-input" data-ar-placeholder="ابحث عن منتج..." data-en-placeholder="Search for a product...">
+          <i class="fa fa-search search-icon"></i>
+        </div>
+        
+        <button id="lang-btn" aria-label="تبديل اللغة">
+          <div class="flag">
+            <img src="us.png" alt="US Flag">
+          </div>
+          <div class="text">US</div>
+        </button>
+  
+        <button id="theme-toggle" class="theme-icon" aria-label="تبديل الوضع">
+          <img src="light-icon.png" alt="Toggle Theme" id="theme-icon" />
+        </button>
+  
+        <button id="mobile-menu-btn" aria-label="فتح القائمة">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+    </header>
+  
+    <div class="mobile-menu">
+      <button class="close-btn" aria-label="إغلاق القائمة">
+        <i class="fa fa-times"></i>
+      </button>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+          <li><a href="#" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+          <li><a href="#" data-ar="عنا" data-en="About">عنا</a></li>
+          <li><a href="contact.html" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="product-details">
+        <div class="container">
+            <img src="product5.jpg" alt="Watch 1">
+            <div class="product-info">
+                <h1 data-ar="ساعة Watch1" data-en="Watch 1">ساعة Watch1</h1>
+                <p class="price" data-ar="500 جنيه مصري" data-en="$500">$500</p>
+                <p data-ar="الوصف: ساعة فاخرة بتصميم أنيق ومميز، مصنوعة من أفضل الخامات ومناسبة لجميع المناسبات." data-en="Description: A luxury watch with an elegant and distinctive design, made from the finest materials and suitable for all occasions.">الوصف: ساعة فاخرة بتصميم أنيق ومميز، مصنوعة من أفضل الخامات ومناسبة لجميع المناسبات.</p>
+                <a href="checkout.html" class="btn" data-ar="الدفع الآن" data-en="Checkout">الدفع الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+          <img src="logo.png" alt="SANTO Logo" class="footer-logo">
+          <p class="footer-about">SANTO Watch Store يقدم أحدث الساعات العالمية بلمسة من الأناقة والفخامة.</p>
+          <ul class="footer-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="#">رجالي</a></li>
+            <li><a href="#">حريمي</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+          <div class="footer-social">
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:santo.watch.eg@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="tel:01026602800"><i class="fa fa-phone"></i></a>
+          </div>
+          <p class="footer-copy">SANTO Watch Store</p>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
